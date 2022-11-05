@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon main.js --experimental-modules",
-    "up": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-    "down": "npx sequelize-cli db:migrate:undo:all"
+    "up": "npx sequelize-cli db:migrate --env production && npx sequelize-cli db:seed:all --env production",
+    "down": "npx sequelize-cli db:migrate:undo:all --env production"
   },
   "author": "dayuss",
   "license": "ISC",
