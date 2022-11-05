@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js --experimental-modules",
+    "start": "node main.js",
     "up": "npx sequelize-cli db:migrate --env production && npx sequelize-cli db:seed:all --env production",
     "down": "npx sequelize-cli db:migrate:undo:all --env production"
   },
